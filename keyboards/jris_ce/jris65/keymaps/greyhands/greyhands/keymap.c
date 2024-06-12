@@ -22,9 +22,9 @@
 #define _MAC 0   // MacOS default layer
 #define _WIN 1   // Windows layer
 #define _MOD 2
-#define _RAISE_1 3  // Special layer to test Apex Legends superglide macro
-#define _RAISE_2 4  // Special layer to test Apex Legends superglide macro
-#define _RAISE_3 5  // Special layer to test Apex Legends superglide macro
+#define _RAISE_1 3
+#define _RAISE_2 4
+#define _RAISE_3 5
 #define _TOOLS 6
 
 
