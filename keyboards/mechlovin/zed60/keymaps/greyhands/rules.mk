@@ -1,0 +1,5 @@
+NKRO_ENABLE = yes
+MOUSEKEY_ENABLE = no # Mouse keys
+CONSOLE_ENABLE = no
+# VIA_ENABLE = yes
+LTO_ENABLE = yes

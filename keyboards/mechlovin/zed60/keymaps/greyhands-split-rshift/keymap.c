@@ -15,7 +15,6 @@
  */
 #include QMK_KEYBOARD_H
 
-
 #define _MAC 0   // MacOS default layer
 #define _WIN 1   // Windows layer
 #define _RAISE_1 2
@@ -23,8 +22,7 @@
 #define _RAISE_3 4
 #define _MOD 5
 #define _TOOLS 6
-#define _QOL 7
-#define _QMK 8
+#define _QMK 7
 
 #define HOME_S      LT(_RAISE_3, KC_S)
 #define HOME_D      LT(_RAISE_2, KC_D)
@@ -32,7 +30,6 @@
 #define HOME_SPC    LT(_MOD, KC_SPC)
 #define MO_MOD      MO(_MOD)
 #define MO_TOOLS    MO(_TOOLS)
-#define TG_QOL      TG(_QOL)
 #define TG_WIN      TG(_WIN)
 #define TG_QMK      TG(_QMK)
 
@@ -89,16 +86,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 		KC_NO, KC_NO, KC_NO, KC_VOLD, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		TG_QOL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 		TG_QMK, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
-	),
-
-    [_QOL] = LAYOUT_60_ansi_split_bs_rshift(
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, DT_DOWN, DT_UP, DT_PRNT, KC_NO, KC_NO, QK_BOOT,
-		TG_QOL, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_UP, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT
 	),
 
     [_QMK] = LAYOUT_60_ansi_split_bs_rshift(
